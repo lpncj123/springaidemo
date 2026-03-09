@@ -1,0 +1,14 @@
+
+spring:
+  ai:
+    ollama:
+      base-url: http://127.0.0.1:11434
+      chat:
+        options:
+          model: qwen2.5:7b    # 改成你 ollama list 看到的模型名
+          temperature: 0.7
+          top-p: 0.9
+          max-tokens: 2048
+
+    retry:
+      enabled: false
